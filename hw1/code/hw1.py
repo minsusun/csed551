@@ -122,3 +122,44 @@ def build2DGaussianKernel(kernel_size: int, kernel_sigma: float) -> np.ndarray:
     kernel = g * g.T
     # suppose g is normalized already, result of g * g.T should be normalized, too
     return kernel
+
+
+# PROBLEM 2: HISTOGRAM EQUALIZATION
+
+
+def histogramEqualization(image: np.ndarray) -> np.ndarray:
+    """**PROBLEM 2: HISTOGRAM EQUALIZATION**
+
+    Args:
+        image (np.ndarray): input image, it should be grayscale or (a)rgb image
+
+    Returns:
+        np.ndarray: histogram equalized image, same size as input image
+    """
+    assert (
+        len(image.shape) == 3 or len(image.shape) == 2
+    )  # image should be (A)RGB or GRAYSCALE
+
+    if len(image.shape) == 2:  # GRAYSCALE
+        return histogramEqulizationSingleChannel(image)
+
+    for c in range(image.shape[2]):
+        image[:, :, c] = histogramEqulizationSingleChannel(image[:, :, c])
+    return image
+
+
+def histogramEqulizationSingleChannel(image: np.ndarray) -> np.ndarray:
+    """histogram equalization on single channel
+
+    Args:
+        image (np.ndarray): input image of (height, width), this should be single channel image
+
+    Returns:
+        np.ndarray: histogram equalized image, same size as input image
+    """
+    assert len(image.shape) == 2
+
+    hist, _ = np.histogram(image.flatten(), 256, [0, 256])
+    cdf = hist.cumsum() # cumulative sum of histogram
+    coef = 255 / cdf[-1] # transformation coefficient
+    return np.vectorize(lambda p: int(coef * cdf[p]))(image)
