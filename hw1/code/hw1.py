@@ -25,7 +25,7 @@ def filterGaussian(
         image (np.adarray): The function must return a filtered RGB image.
     """
 
-    assert len(image.shape) == 3 # do not accept GrayScale or ARGB image
+    assert len(image.shape) == 3  # do not accept GrayScale or ARGB image
     assert image.shape[2] == 3  # make sure image has RGB channel
     assert kernel_size % 2 == 1  # kernel size is odd
     assert kernel_sigma > 0  # kernel sigma is positive real number
@@ -160,6 +160,6 @@ def histogramEqulizationSingleChannel(image: np.ndarray) -> np.ndarray:
     assert len(image.shape) == 2
 
     hist, _ = np.histogram(image.flatten(), 256, [0, 256])
-    cdf = hist.cumsum() # cumulative sum of histogram
-    coef = 255 / cdf[-1] # transformation coefficient
+    cdf = hist.cumsum()  # cumulative sum of histogram
+    coef = 255 / cdf[-1]  # transformation coefficient
     return np.vectorize(lambda p: int(coef * cdf[p]))(image)
