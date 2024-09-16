@@ -34,6 +34,11 @@ configs = {
         "separable_list": [True, False],
         "output_dir": os.path.join(output_dir, "problem1"),
     },
+    "problem2": {
+        "input_image_base_dir": input_dir,
+        "input_image_list": color_image_list + gray_image_list,
+        "output_dir": os.path.join(output_dir, "problem2"),
+    },
 }
 
 
@@ -76,4 +81,11 @@ def problem1():
                         print(f"[***]  border_type: {separable}")
                         print()
 
+def problem2():
+    config = configs["problem1"]
+
+    if not os.path.exists(config["output_dir"]):
+        os.makedirs(config["output_dir"])
+
 problem1()
+problem2()
