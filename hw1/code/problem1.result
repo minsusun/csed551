@@ -1,0 +1,2916 @@
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.015265226364136 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_0.1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 2.9883320331573486 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_0.1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.167022228240967 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_0.1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 2.9316020011901855 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_0.1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.128998041152954 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_0.1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 2.8905391693115234 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_0.1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.1469719409942627 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 2.9245080947875977 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.135953187942505 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 2.9024078845977783 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.5372180938720703 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 2.920358896255493 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.305233955383301 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_10_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 2.9149279594421387 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_10_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.1470329761505127 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_10_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 2.92303729057312 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_10_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.1473679542541504 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_10_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 2.90394926071167 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_1_10_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.7512898445129395 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_0.1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.456146001815796 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_0.1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.739772319793701 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_0.1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.4473652839660645 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_0.1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.774681091308594 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_0.1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.4745090007781982 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_0.1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.667104721069336 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.45055890083313 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.653869867324829 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.4568889141082764 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.754551887512207 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.4516031742095947 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.882194757461548 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_10_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.5591039657592773 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_10_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.666179895401001 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_10_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.59391188621521 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_10_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.715388774871826 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_10_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 3.5106041431427 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_25_10_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 12.072636842727661 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_0.1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.595194101333618 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_0.1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 8.30300784111023 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_0.1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.599289894104004 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_0.1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 6.783854007720947 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_0.1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.606775760650635 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_0.1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 6.679781198501587 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.601894855499268 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 948.5062279701233 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.575850963592529 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 6.640155792236328 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.622258901596069 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 6.601847171783447 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_10_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.539700269699097 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_10_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 6.603397846221924 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_10_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.560728073120117 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_10_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 6.5915961265563965 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_10_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color1.jpg!
+[***]work executed 4.592854976654053 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color1_45_10_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.814081907272339 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_0.1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.4252960681915283 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_0.1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.7472620010375977 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_0.1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.433259963989258 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_0.1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.7125890254974365 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_0.1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.449270009994507 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_0.1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.728145122528076 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.4300663471221924 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.742257833480835 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.437775135040283 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.72220516204834 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.435441732406616 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.715803861618042 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_10_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.484377861022949 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_10_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.712913990020752 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_10_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.4283828735351562 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_10_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.7243428230285645 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_10_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 3.4258298873901367 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_1_10_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.586938858032227 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_0.1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 4.038674831390381 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_0.1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.597872972488403 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_0.1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 4.049638032913208 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_0.1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.585519075393677 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_0.1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 4.071912050247192 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_0.1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.4927849769592285 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 4.059126138687134 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.4997193813323975 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 4.055335998535156 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.555527925491333 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 4.063907146453857 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.500517845153809 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_10_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 942.0515940189362 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_10_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.666204929351807 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_10_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 4.066659927368164 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_10_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.632820129394531 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_10_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 4.075417995452881 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_25_10_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 8.028531074523926 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_0.1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.379352807998657 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_0.1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 7.90976095199585 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_0.1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.368040084838867 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_0.1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 1003.0179369449615 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_0.1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.390352964401245 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_0.1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 7.842928886413574 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.36667537689209 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 7.789480924606323 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.350927829742432 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 7.841977119445801 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.4064953327178955 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 7.819468021392822 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_10_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 975.27783203125 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_10_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 8.024063110351562 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_10_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.377066135406494 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_10_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 7.887130975723267 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_10_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color3.jpg!
+[***]work executed 5.401923894882202 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color3_45_10_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.353940010070801 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_0.1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 3.9550063610076904 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_0.1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.2772369384765625 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_0.1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 3.952547073364258 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_0.1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.288700103759766 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_0.1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 3.9445760250091553 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_0.1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.277828216552734 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 3.946384906768799 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.273000001907349 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 3.9474167823791504 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.273119926452637 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 3.9394030570983887 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.277086973190308 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_10_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 3.9384820461273193 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_10_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.268168926239014 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_10_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 3.9556212425231934 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_10_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.325916767120361 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_10_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.043353080749512 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_1_10_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.508257150650024 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_0.1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.780076026916504 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_0.1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.429992198944092 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_0.1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.672203063964844 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_0.1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.432211875915527 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_0.1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.682651996612549 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_0.1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.327039003372192 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.653203010559082 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.370182037353516 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.689893960952759 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.304096937179565 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.650582790374756 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.293574810028076 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_10_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.665467262268066 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_10_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.305302858352661 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_10_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.68873405456543 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_10_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.303921937942505 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_10_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 4.6919190883636475 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_25_10_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 9.091405153274536 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_0.1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.205899000167847 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_0.1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 9.123258113861084 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_0.1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.1945319175720215 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_0.1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 926.4980342388153 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_0.1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.202280044555664 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_0.1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 8.990045070648193 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.221770286560059 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 8.952593803405762 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.15499210357666 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 962.1966271400452 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.16809868812561 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 9.046083688735962 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_10_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.174139022827148 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_10_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 8.952100038528442 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_10_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.161669015884399 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_10_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 8.958081007003784 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_10_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color2.jpg!
+[***]work executed 6.220099210739136 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color2_45_10_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 824.235681772232 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_0.1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 98.33692216873169 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_0.1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1084.2494702339172 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_0.1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 98.4953670501709 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_0.1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1034.715773820877 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_0.1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 98.36277484893799 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_0.1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1163.3048520088196 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 98.22579097747803 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1151.6653101444244 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 98.70388603210449 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 106.80853796005249 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1131.7490670681 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 106.73079228401184 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_10_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1016.7467057704926 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_10_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1100.149029970169 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_10_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 98.54831409454346 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_10_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 915.526643037796 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_10_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 117.38126802444458 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_1_10_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 162.45662569999695 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_0.1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 117.72382879257202 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_0.1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 161.0676028728485 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_0.1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 117.55345416069031 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_0.1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 161.37065982818604 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_0.1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1061.0391421318054 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_0.1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1224.5577590465546 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 117.02070307731628 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 157.7302029132843 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1530.800695180893 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 157.65762615203857 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 117.42430090904236 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 158.94248700141907 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_10_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 255.4712839126587 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_10_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 158.23973083496094 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_10_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1205.8837068080902 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_10_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 158.49125790596008 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_10_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1465.2429790496826 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_25_10_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 227.27316999435425 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_0.1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 347.9940071105957 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_0.1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 935.5581607818604 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_0.1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 154.15785193443298 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_0.1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 231.37703776359558 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_0.1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 156.51861095428467 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_0.1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 225.08228492736816 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 156.67470693588257 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 225.7510221004486 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 155.59926986694336 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 226.10153603553772 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 156.31644296646118 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 226.9843978881836 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_10_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 156.55547308921814 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_10_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 227.20982789993286 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_10_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 156.87990713119507 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_10_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1919.1021840572357 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_10_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color6.jpg!
+[***]work executed 1086.9061722755432 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color6_45_10_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 1042.2066259384155 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_0.1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 98.39229083061218 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_0.1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 106.59088206291199 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_0.1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 98.7817747592926 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_0.1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 108.01790428161621 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_0.1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 212.59342408180237 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_0.1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 1124.044285774231 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 686.1918051242828 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 1030.9185180664062 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 1005.2056441307068 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 106.92671203613281 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 1044.2743408679962 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 106.95198488235474 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_10_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 98.47999286651611 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_10_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 287.23008465766907 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_10_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 998.8624856472015 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_10_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 106.94179272651672 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_10_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 477.8370740413666 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_1_10_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 161.03894996643066 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_0.1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 117.0874810218811 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_0.1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 160.82353591918945 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_0.1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 117.47751808166504 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_0.1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 161.00533413887024 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_0.1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 117.32785105705261 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_0.1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 158.20310306549072 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 116.99716186523438 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 1237.6346838474274 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 120.07645916938782 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 158.2298858165741 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 116.3345079421997 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 159.20553016662598 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_10_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 119.67024207115173 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_10_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 159.50796389579773 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_10_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 122.35297513008118 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_10_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 167.26220321655273 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_10_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 127.75088787078857 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_25_10_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 245.89512991905212 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_0.1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 161.21865701675415 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_0.1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 237.64523720741272 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_0.1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 161.96294498443604 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_0.1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 243.09729409217834 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_0.1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 168.15617394447327 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_0.1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 239.84436774253845 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 162.24403882026672 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 235.39391589164734 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 164.28947615623474 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 237.77328372001648 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 162.9808337688446 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 247.00694727897644 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_10_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 166.03826999664307 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_10_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 236.48285603523254 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_10_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 162.52251386642456 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_10_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 235.2753827571869 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_10_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color5.jpg!
+[***]work executed 161.93386697769165 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color5_45_10_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 85.10520505905151 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_0.1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 77.63373494148254 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_0.1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 84.573233127594 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_0.1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 79.03946900367737 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_0.1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 83.62366604804993 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_0.1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 76.83875703811646 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_0.1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 81.5747058391571 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_1_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 75.21463704109192 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_1_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 81.43224596977234 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_1_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 75.21870803833008 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_1_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 81.52257680892944 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_1_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 75.43295574188232 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_1_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 81.64349699020386 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_10_replicate_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 75.12333297729492 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_10_replicate_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 81.5039689540863 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_10_reflect_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 75.04637479782104 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_10_reflect_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 82.59036874771118 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_10_wrap_True.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 77.08512783050537 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_1_10_wrap_False.jpg!
+[***]  kernel_size: 1
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 125.16645002365112 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_0.1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 91.04742765426636 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_0.1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 125.07818007469177 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_0.1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 91.37589693069458 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_0.1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 125.25541496276855 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_0.1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 91.51293802261353 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_0.1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 120.50193810462952 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_1_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 90.29760718345642 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_1_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 122.79599618911743 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_1_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 91.25736594200134 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_1_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 123.34679508209229 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_1_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 91.01760506629944 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_1_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 125.04269886016846 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_10_replicate_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 93.48743891716003 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_10_replicate_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 124.85055208206177 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_10_reflect_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 91.78847289085388 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_10_reflect_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 123.19662690162659 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_10_wrap_True.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 90.19746518135071 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_25_10_wrap_False.jpg!
+[***]  kernel_size: 25
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 176.9266140460968 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_0.1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 120.03150606155396 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_0.1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 176.9277720451355 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_0.1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 120.19339489936829 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_0.1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 177.75780320167542 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_0.1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 120.05744409561157 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_0.1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 0.1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 175.67690992355347 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_1_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 119.43002080917358 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_1_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 173.81474900245667 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_1_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 118.42068600654602 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_1_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 171.31205797195435 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_1_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 118.37357687950134 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_1_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 1
+[***]  border_type: wrap
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 173.22595405578613 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_10_replicate_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 121.21995878219604 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_10_replicate_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: replicate
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 174.2745668888092 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_10_reflect_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 119.65961599349976 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_10_reflect_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: reflect
+[***]  border_type: False
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 172.697518825531 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_10_wrap_True.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: True
+
+[ ! ]Done reading color4.jpg!
+[***]work executed 119.01612186431885 sec
+[ ! ]Applied Gaussian filter on image!
+[***]Saved processed image as color4_45_10_wrap_False.jpg!
+[***]  kernel_size: 45
+[***]  kernel_sigma: 10
+[***]  border_type: wrap
+[***]  border_type: False
+
