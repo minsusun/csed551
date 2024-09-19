@@ -93,9 +93,12 @@ def problem1():
                         print(f"[***]Saved processed image as {output_file_name}!")
                         print(f"[***]  kernel_size: {kernel_size}")
                         print(f"[***]  kernel_sigma: {kernel_sigma}")
-                        print(f"[***]  border_type: {border_type_lookup_table[border_type]}")
+                        print(
+                            f"[***]  border_type: {border_type_lookup_table[border_type]}"
+                        )
                         print(f"[***]  border_type: {separable}")
                         print()
+
 
 def problem2():
     config = configs["problem2"]
@@ -151,10 +154,12 @@ def problem2():
                 ax2.get_yaxis().set_visible(False)
         else:
             target_flat = image.flatten()
+
             ax1 = fig.add_subplot(rows, cols, 0 * cols + 2)
             ax1.hist(target_flat, 256, color="black", alpha=config["alpha"])
             ax1.set_xlabel(f"Original Histogram")
             ax1.get_yaxis().set_visible(False)
+
             ax2 = ax1.twinx()
             ax2.plot(
                 np.cumsum(np.histogram(target_flat, 256, [0, 256])[0]),
@@ -163,9 +168,7 @@ def problem2():
             ax2.get_yaxis().set_visible(False)
 
         processed_image = hw1.histogramEqualization(image)
-        cv2.imwrite(
-            os.path.join(config["output_dir"], image_filename), processed_image
-        )
+        cv2.imwrite(os.path.join(config["output_dir"], image_filename), processed_image)
 
         ax = fig.add_subplot(rows, cols, 1 * cols + 1)
         if is_rgb:
@@ -184,7 +187,9 @@ def problem2():
                 ax1.hist(
                     target_flat, 256, color=color_lookup_table[i], alpha=config["alpha"]
                 )
-                ax1.set_xlabel(f"Equalized Histogram of {color_lookup_table[i]} channel")
+                ax1.set_xlabel(
+                    f"Equalized Histogram of {color_lookup_table[i]} channel"
+                )
                 ax1.get_yaxis().set_visible(False)
 
                 ax2 = ax1.twinx()
@@ -195,10 +200,12 @@ def problem2():
                 ax2.get_yaxis().set_visible(False)
         else:
             target_flat = processed_image.flatten()
+
             ax1 = fig.add_subplot(rows, cols, 1 * cols + 2)
             ax1.hist(target_flat, 256, color="black", alpha=config["alpha"])
             ax1.set_xlabel(f"Equlized Histogram")
             ax1.get_yaxis().set_visible(False)
+
             ax2 = ax1.twinx()
             ax2.plot(
                 np.cumsum(np.histogram(target_flat, 256, [0, 256])[0]),
