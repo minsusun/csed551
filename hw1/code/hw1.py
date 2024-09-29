@@ -159,6 +159,6 @@ def histogramEqulizationSingleChannel(image: np.ndarray) -> np.ndarray:
     assert len(image.shape) == 2
 
     hist, _ = np.histogram(image.flatten(), 256, [0, 256])
-    cdf = hist.cumsum()  # cumulative sum of histogram
-    coef = 255 / cdf[-1]  # transformation coefficient
-    return np.vectorize(lambda p: int(coef * cdf[p]))(image)
+    chf = hist.cumsum()  # cumulative histogram function
+    coef = 255 / chf[-1]  # transformation coefficient
+    return np.vectorize(lambda p: int(coef * chf[p]))(image)
