@@ -926,7 +926,7 @@
 [***]  border_type: True
 
 [ ! ]Done reading color3.jpg!
-[***]work executed 975.27783203125 sec
+[***]work executed 5.727862119674683 sec
 [ ! ]Applied Gaussian filter on image!
 [***]Saved processed image as color3_45_10_replicate_False.jpg!
 [***]  kernel_size: 45
