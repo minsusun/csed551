@@ -48,8 +48,8 @@ def filterGaussian(
 
     if separable:
         kernel = build1DGaussianKernel(kernel_size, kernel_sigma)
-        kernel_row = kernel.reshape((1, kernel_size))
-        kernel_col = kernel.reshape((kernel_size, 1))
+        kernel_row = kernel.reshape(1, kernel_size)
+        kernel_col = kernel.reshape(kernel_size, 1)
     else:
         kernel = build2DGaussianKernel(kernel_size, kernel_sigma)
 
@@ -118,7 +118,7 @@ def build2DGaussianKernel(kernel_size: int, kernel_sigma: float) -> np.ndarray:
     g = build1DGaussianKernel(
         kernel_size=kernel_size, kernel_sigma=kernel_sigma
     ).reshape(kernel_size, 1)
-    kernel = g * g.T
+    kernel = np.matmul(g, g.T)
     # suppose g is normalized already, result of g * g.T should be normalized, too
     return kernel
 
@@ -159,6 +159,6 @@ def histogramEqulizationSingleChannel(image: np.ndarray) -> np.ndarray:
     assert len(image.shape) == 2
 
     hist, _ = np.histogram(image.flatten(), 256, [0, 256])
-    cdf = hist.cumsum()  # cumulative sum of histogram
-    coef = 255 / cdf[-1]  # transformation coefficient
-    return np.vectorize(lambda p: int(coef * cdf[p]))(image)
+    chf = hist.cumsum()  # cumulative histogram function
+    coef = 255 / chf[-1]  # transformation coefficient
+    return np.vectorize(lambda p: int(coef * chf[p]))(image)

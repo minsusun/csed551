@@ -36,6 +36,9 @@ configs = {
         "separable_list": [True, False],
         "output_dir": os.path.join(output_dir, "problem1"),
     },
+    "problem1_supplementary": {
+        "output_dir": os.path.join(output_dir, "problem1", "supplementary")
+    },
     "problem2": {
         "input_image_base_dir": input_dir,
         "input_image_list": color_image_list + gray_image_list,
@@ -96,8 +99,29 @@ def problem1():
                         print(
                             f"[***]  border_type: {border_type_lookup_table[border_type]}"
                         )
-                        print(f"[***]  border_type: {separable}")
+                        print(f"[***]  separable: {separable}")
                         print()
+
+
+def problem1_supplementary():
+    config = configs["problem1_supplementary"]
+    config_ref = configs["problem1"]
+
+    if not os.path.exists(config["output_dir"]):
+        os.makedirs(config["output_dir"])
+
+    for kernel_size in config_ref["kernel_size_list"]:
+        for kernel_sigma in config_ref["kernel_sigma_list"]:
+            kernel = hw1.build2DGaussianKernel(kernel_size, kernel_sigma)
+            plt.title(f"kernel_size={kernel_size} kernel_sigma={kernel_sigma}", fontsize=15)
+            plt.tight_layout()
+            plt.imshow(kernel, cmap="gray")
+            plt.savefig(
+                os.path.join(config["output_dir"], f"{kernel_size}_{kernel_sigma}.png"),
+                format="png",
+                pad_inches=0,
+                bbox_inches='tight',
+            )
 
 
 def problem2():
