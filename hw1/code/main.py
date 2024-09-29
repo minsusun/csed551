@@ -99,7 +99,7 @@ def problem1():
                         print(
                             f"[***]  border_type: {border_type_lookup_table[border_type]}"
                         )
-                        print(f"[***]  border_type: {separable}")
+                        print(f"[***]  separable: {separable}")
                         print()
 
 
