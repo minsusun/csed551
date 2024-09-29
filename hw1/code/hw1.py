@@ -118,7 +118,7 @@ def build2DGaussianKernel(kernel_size: int, kernel_sigma: float) -> np.ndarray:
     g = build1DGaussianKernel(
         kernel_size=kernel_size, kernel_sigma=kernel_sigma
     ).reshape(kernel_size, 1) # TODO: match shape style
-    kernel = g * g.T # TODO: use np.matmul to clarify what is going on. it is not the matrix broadcasting
+    kernel = np.matmul(g, g.T)
     # suppose g is normalized already, result of g * g.T should be normalized, too
     return kernel
 
