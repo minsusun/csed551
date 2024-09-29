@@ -48,8 +48,8 @@ def filterGaussian(
 
     if separable:
         kernel = build1DGaussianKernel(kernel_size, kernel_sigma)
-        kernel_row = kernel.reshape((1, kernel_size))
-        kernel_col = kernel.reshape((kernel_size, 1))
+        kernel_row = kernel.reshape(1, kernel_size)
+        kernel_col = kernel.reshape(kernel_size, 1)
     else:
         kernel = build2DGaussianKernel(kernel_size, kernel_sigma)
 
@@ -117,7 +117,7 @@ def build2DGaussianKernel(kernel_size: int, kernel_sigma: float) -> np.ndarray:
     # 2D Gaussian kernel is product of 1D Gaussian kernel and its transpose
     g = build1DGaussianKernel(
         kernel_size=kernel_size, kernel_sigma=kernel_sigma
-    ).reshape(kernel_size, 1) # TODO: match shape style
+    ).reshape(kernel_size, 1)
     kernel = np.matmul(g, g.T)
     # suppose g is normalized already, result of g * g.T should be normalized, too
     return kernel
