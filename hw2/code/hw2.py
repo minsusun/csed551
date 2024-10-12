@@ -134,3 +134,67 @@ def idealLowPassFiltering(
     result: np.ndarray[np.uint8] = frequencyDomainFiltering(padded_image, ilf)
 
     return result[padding:-padding, padding:-padding, :]
+
+
+# PROBLEM 2: GAUSSIAN LOWPASS FILTER
+
+
+def gaussianLowPassFilter(
+    shape: tuple[int, int],
+    threshold: float,
+) -> "np.ndarray[np.float32]":
+    """Build `shape` Shaped **Gaussian Low Pass Filter** with Threshold.
+
+    Gaussian Low Pass Filter can be formulated below:
+
+    f(u,v) = exp(-D(u,v)^2/D_0^2)
+
+    Args:
+        shape (tuple[int, int]): desired shape of gaussian low pass filter
+        threshold (float): threshold for gaussian low pass filter, D_0
+
+    Returns:
+        np.ndarray[np.float32]: Gaussian Low Pass Filter
+    """
+    D: np.ndarray[np.float32] = squaredDistanceMatrix(shape)
+    return np.exp(-D / threshold**2)
+
+
+def gaussianLowPassFiltering(
+    image: "np.ndarray[np.uint8]",
+    padding: int,
+    threshold: float,
+) -> "np.ndarray[np.uint8]":
+    """Filter the image with gaussian low pass filter
+
+    Args:
+        image (np.ndarray[np.uint8]): image to filter
+        padding (int): size of padding
+        threshold (float): threshold of filter, D_0
+
+    Returns:
+        np.ndarray[np.uint8]: filtered image
+    """
+    assert len(image.shape) == 3  # Colored Image
+    assert image.shape[2] == 3  # RGB
+    assert padding >= 0
+    assert threshold >= 0
+
+    padded_image: np.ndarray[np.uint8] = cv2.copyMakeBorder(
+        image,
+        padding,
+        padding,
+        padding,
+        padding,
+        DEFAULT_BORDER_TYPE,
+    )
+
+    # gaussian low pass filter
+    glf: np.ndarray[np.float32] = gaussianLowPassFilter(
+        padded_image.shape[:2], threshold
+    )
+
+    # result is (height+2*padding, width+2*padding, channels) shaped
+    result: np.ndarray[np.uint8] = frequencyDomainFiltering(padded_image, glf)
+
+    return result[padding:-padding, padding:-padding, :]
