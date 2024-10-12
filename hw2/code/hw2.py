@@ -198,3 +198,47 @@ def gaussianLowPassFiltering(
     result: np.ndarray[np.uint8] = frequencyDomainFiltering(padded_image, glf)
 
     return result[padding:-padding, padding:-padding, :]
+
+
+# PROBLEM 3: UNSHARP MASKING & CONVOLUTION THEOREM
+
+
+def psf2otf(
+    filter: np.ndarray,
+    shape: tuple[int, int],
+) -> np.ndarray:
+    """Pad and shift the filter, then return with result of FFT of it
+
+    Args:
+        filter (np.ndarray): psf, filter
+        shape (tuple[int, int]): desired shape of output
+
+    Returns:
+        np.ndarray: 2d numpy array otf
+    """
+
+    top = filter.shape[0] // 2
+    bottom = filter.shape[0] - top
+    left = filter.shape[1] // 2
+    right = filter.shape[1] - left
+
+    psf = np.zeros(shape, dtype=filter.dtype)
+
+    psf[:bottom, :right] = filter[top:, left:]
+    psf[:bottom, shape[1] - left :] = filter[top:, :left]
+    psf[shape[0] - top :, :right] = filter[:top, left:]
+    psf[shape[0] - top :, shape[1] - left :] = filter[:top, :left]
+
+    # return otf
+    return np.fft.fft2(psf)
+
+
+def unsharpMasking(
+    image: np.ndarray,
+    domain: str,
+) -> np.ndarray:
+    assert len(image.shape) == 3  # Colored Image
+    assert image.shape[2] == 3  # RGB
+    assert domain in ["spatial", "frequency"]
+
+    pass
