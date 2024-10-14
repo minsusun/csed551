@@ -203,6 +203,24 @@ def gaussianLowPassFiltering(
 # PROBLEM 3: UNSHARP MASKING & CONVOLUTION THEOREM
 
 
+def gauss(
+    n: int,
+    sigma: float,
+) -> "np.ndarray[np.float32]":
+    r: np.ndarray[np.float32] = np.arange(n, dtype=np.float32) - (n - 1) / 2
+    r = np.exp(-(r**2) / (2 * sigma**2))
+    return r / r.sum()
+
+
+def gauss2d(
+    shape: tuple[int, int],
+    sigma: float,
+) -> "np.ndarray[np.float32]":
+    g1: np.ndarray[np.float32] = gauss(shape[0], sigma).reshape(shape[0], 1)
+    g2: np.ndarray[np.float32] = gauss(shape[1], sigma).reshape(1, shape[1])
+    return np.matmul(g1, g2)
+
+
 def psf2otf(
     filter: np.ndarray,
     shape: tuple[int, int],
@@ -234,11 +252,60 @@ def psf2otf(
 
 
 def unsharpMasking(
-    image: np.ndarray,
+    image: "np.ndarray[np.uint8]",
+    alpha: float,
+    padding: int,
+    sigma: float,
     domain: str,
-) -> np.ndarray:
+) -> "np.ndarray[np.uint8]":
     assert len(image.shape) == 3  # Colored Image
     assert image.shape[2] == 3  # RGB
     assert domain in ["spatial", "frequency"]
+    assert sigma > 0 # valid sigma
 
-    pass
+    filter_size: int = 2 * padding + 1
+    padded_image: np.ndarray[np.uint8] = cv2.copyMakeBorder(
+        image,
+        padding,
+        padding,
+        padding,
+        padding,
+        DEFAULT_BORDER_TYPE,
+    )
+    filter: np.ndarray[np.float32] = gauss2d((filter_size, filter_size), sigma)
+
+    result_image: np.ndarray[np.uint8]
+
+    if domain == "frequency":
+        filter_f: np.ndarray[np.complex128] = psf2otf(filter, padded_image.shape[:2])
+
+        result_channels: list["np.ndarray[np.uint8]"]
+
+        for channel in cv2.split(padded_image):
+            # move on frequency domain
+            channel_f = np.fft.fft2(channel)
+
+            result_f = channel_f + alpha * (channel_f - channel_f * filter_f)
+            result = np.real(np.fft.ifft2(result_f))
+            # result = cv2.normalize(result, None, np.min(channel), np.max(channel), cv2.NORM_MINMAX, -1)
+            result = result.astype(np.uint8)[padding:-padding, padding:-padding, :]
+            result_channels.append(result_channels)
+
+        result_image = cv2.merge(result_channels)
+    else:  # domain == "spatial"
+        height: int
+        width: int
+        channel: int
+        height, width, channel = padded_image.shape
+        filtered_image: np.ndarray[np.float32] = np.zeros_like(image).astype(np.float32)
+        for i in range(height):
+            for j in range(width):
+                for k in range(channel):
+                    filtered_image[i, j, k] = np.sum(
+                        padded_image[i : i + filter_size :, j : j + filter_size, k]
+                        * filter
+                    )
+        result: np.ndarray[np.float32] = image + alpha * (image - filtered_image)
+        # result = cv2.normalize(result, None, np.min(channel), np.max(channel), cv2.NORM_MINMAX, -1)
+        result_image = result.astype(np.uint8)
+    return result_image
