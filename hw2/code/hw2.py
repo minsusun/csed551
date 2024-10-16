@@ -261,7 +261,8 @@ def unsharpMasking(
     assert len(image.shape) == 3  # Colored Image
     assert image.shape[2] == 3  # RGB
     assert domain in ["spatial", "frequency"]
-    assert sigma > 0 # valid sigma
+    assert padding >= 0
+    assert sigma > 0  # valid sigma
 
     filter_size: int = 2 * padding + 1
     padded_image: np.ndarray[np.uint8] = cv2.copyMakeBorder(
@@ -277,27 +278,38 @@ def unsharpMasking(
     result_image: np.ndarray[np.uint8]
 
     if domain == "frequency":
+        # filter on frequency domain
         filter_f: np.ndarray[np.complex128] = psf2otf(filter, padded_image.shape[:2])
 
-        result_channels: list["np.ndarray[np.uint8]"]
+        result_channels: list["np.ndarray[np.uint8]"] = []
 
         for channel in cv2.split(padded_image):
             # move on frequency domain
-            channel_f = np.fft.fft2(channel)
+            channel_f: np.ndarray[np.complex128] = np.fft.fft2(channel)
 
-            result_f = channel_f + alpha * (channel_f - channel_f * filter_f)
-            result = np.real(np.fft.ifft2(result_f))
-            # result = cv2.normalize(result, None, np.min(channel), np.max(channel), cv2.NORM_MINMAX, -1)
-            result = result.astype(np.uint8)[padding:-padding, padding:-padding, :]
-            result_channels.append(result_channels)
+            result_f: np.ndarray[np.complex128] = channel_f + alpha * (
+                channel_f - filter_f * channel_f
+            )
+
+            result: np.ndarray[np.float64] = np.real(np.fft.ifft2(result_f))
+            result = np.clip(
+                result, 0, 255
+            )  # wtf who ever tried to cast ints over 255 to uint8 << me
+            result: np.ndarray[np.uint8] = result.astype(np.uint8)[
+                padding:-padding, padding:-padding
+            ]
+
+            result_channels.append(result)
 
         result_image = cv2.merge(result_channels)
     else:  # domain == "spatial"
         height: int
         width: int
         channel: int
-        height, width, channel = padded_image.shape
+
+        height, width, channel = image.shape
         filtered_image: np.ndarray[np.float32] = np.zeros_like(image).astype(np.float32)
+
         for i in range(height):
             for j in range(width):
                 for k in range(channel):
@@ -305,7 +317,9 @@ def unsharpMasking(
                         padded_image[i : i + filter_size :, j : j + filter_size, k]
                         * filter
                     )
+
         result: np.ndarray[np.float32] = image + alpha * (image - filtered_image)
-        # result = cv2.normalize(result, None, np.min(channel), np.max(channel), cv2.NORM_MINMAX, -1)
-        result_image = result.astype(np.uint8)
+
+        result_image = np.clip(result, 0, 255).astype(np.uint8)
+
     return result_image
