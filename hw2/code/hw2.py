@@ -102,6 +102,7 @@ def idealLowPassFiltering(
     image: "np.ndarray[np.uint8]",
     padding: int,
     threshold: float,
+    strip_padding: bool = True,
 ) -> "np.ndarray[np.uint8]":
     """Filter the image with ideal low pass filter
 
@@ -109,6 +110,7 @@ def idealLowPassFiltering(
         image (np.ndarray[np.uint8]): image to filter
         padding (int): size of padding
         threshold (float): threshold of filter, D_0
+        strip_padding (bool): flag to strip the padding of result image. Defaults to True
 
     Returns:
         np.ndarray[np.uint8]: filtered image
@@ -133,7 +135,10 @@ def idealLowPassFiltering(
     # result is (height+2*padding, width+2*padding, channels) shaped
     result: np.ndarray[np.uint8] = frequencyDomainFiltering(padded_image, ilf)
 
-    return result[padding:-padding, padding:-padding, :]
+    if not strip_padding or padding == 0:
+        return result
+    else:
+        return result[padding:-padding, padding:-padding, :]
 
 
 # PROBLEM 2: GAUSSIAN LOWPASS FILTER
@@ -164,6 +169,7 @@ def gaussianLowPassFiltering(
     image: "np.ndarray[np.uint8]",
     padding: int,
     threshold: float,
+    strip_padding: bool = True,
 ) -> "np.ndarray[np.uint8]":
     """Filter the image with gaussian low pass filter
 
@@ -171,6 +177,7 @@ def gaussianLowPassFiltering(
         image (np.ndarray[np.uint8]): image to filter
         padding (int): size of padding
         threshold (float): threshold of filter, D_0
+        strip_padding (bool): flag to strip the padding of result image. Defaults to True
 
     Returns:
         np.ndarray[np.uint8]: filtered image
@@ -197,7 +204,10 @@ def gaussianLowPassFiltering(
     # result is (height+2*padding, width+2*padding, channels) shaped
     result: np.ndarray[np.uint8] = frequencyDomainFiltering(padded_image, glf)
 
-    return result[padding:-padding, padding:-padding, :]
+    if not strip_padding or padding == 0:
+        return result
+    else:
+        return result[padding:-padding, padding:-padding, :]
 
 
 # PROBLEM 3: UNSHARP MASKING & CONVOLUTION THEOREM
