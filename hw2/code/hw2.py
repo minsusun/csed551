@@ -250,17 +250,17 @@ def gauss2d(
 
 
 def psf2otf(
-    filter: np.ndarray,
+    filter: "np.ndarray[np.float32]",
     shape: tuple[int, int],
-) -> np.ndarray:
+) -> "np.ndarray[np.complex128]":
     """Pad and shift the filter, then return with result of FFT of it
 
     Args:
-        filter (np.ndarray): psf, filter
+        filter (np.ndarray[np.float32]): psf, filter
         shape (tuple[int, int]): desired shape of output
 
     Returns:
-        np.ndarray: 2d numpy array otf
+        np.ndarray[np.complex128]: 2d numpy array otf
     """
 
     top = filter.shape[0] // 2
