@@ -317,7 +317,7 @@ def problem3():
                     cv2.imwrite(
                         result_image_file_path, result_image
                     )  # ~/problem3/domain/filename.png
-                    print(f"[ ! ]Saved unsharpened image at {result_image_file_path}")
+                    print(f"[ ! ]Saved unsharpened image at \"{result_image_file_path}\"")
 
                     # visualization
                     height, width, channel = original_image.shape
