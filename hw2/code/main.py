@@ -291,7 +291,7 @@ def problem3():
 
         for alpha in config["alpha_list"]:
             for padding in config["padding_list"]:
-                sigma = padding / 6.0  # follow material configuration
+                sigma = round(padding / 6.0, 1) # follow material configuration
 
                 for domain in config["domain_list"]:
                     # main process
