@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-DEFAULT_BORDER_TYPE = cv2.BORDER_REFLECT
+DEFAULT_BORDER_TYPE = cv2.BORDER_REPLICATE
 
 
 def squaredDistanceMatrix(shape: tuple[int, int]) -> "np.ndarray[np.float32]":
@@ -102,6 +102,7 @@ def idealLowPassFiltering(
     image: "np.ndarray[np.uint8]",
     padding: int,
     threshold: float,
+    strip_padding: bool = True,
 ) -> "np.ndarray[np.uint8]":
     """Filter the image with ideal low pass filter
 
@@ -109,6 +110,7 @@ def idealLowPassFiltering(
         image (np.ndarray[np.uint8]): image to filter
         padding (int): size of padding
         threshold (float): threshold of filter, D_0
+        strip_padding (bool): flag to strip the padding of result image. Defaults to True
 
     Returns:
         np.ndarray[np.uint8]: filtered image
@@ -133,7 +135,10 @@ def idealLowPassFiltering(
     # result is (height+2*padding, width+2*padding, channels) shaped
     result: np.ndarray[np.uint8] = frequencyDomainFiltering(padded_image, ilf)
 
-    return result[padding:-padding, padding:-padding, :]
+    if not strip_padding or padding == 0:
+        return result
+    else:
+        return result[padding:-padding, padding:-padding, :]
 
 
 # PROBLEM 2: GAUSSIAN LOWPASS FILTER
@@ -164,6 +169,7 @@ def gaussianLowPassFiltering(
     image: "np.ndarray[np.uint8]",
     padding: int,
     threshold: float,
+    strip_padding: bool = True,
 ) -> "np.ndarray[np.uint8]":
     """Filter the image with gaussian low pass filter
 
@@ -171,6 +177,7 @@ def gaussianLowPassFiltering(
         image (np.ndarray[np.uint8]): image to filter
         padding (int): size of padding
         threshold (float): threshold of filter, D_0
+        strip_padding (bool): flag to strip the padding of result image. Defaults to True
 
     Returns:
         np.ndarray[np.uint8]: filtered image
@@ -197,7 +204,10 @@ def gaussianLowPassFiltering(
     # result is (height+2*padding, width+2*padding, channels) shaped
     result: np.ndarray[np.uint8] = frequencyDomainFiltering(padded_image, glf)
 
-    return result[padding:-padding, padding:-padding, :]
+    if not strip_padding or padding == 0:
+        return result
+    else:
+        return result[padding:-padding, padding:-padding, :]
 
 
 # PROBLEM 3: UNSHARP MASKING & CONVOLUTION THEOREM
@@ -207,6 +217,15 @@ def gauss(
     n: int,
     sigma: float,
 ) -> "np.ndarray[np.float32]":
+    """Gaussian Distribution 1D Kernel
+
+    Args:
+        n (int): Size of kernel
+        sigma (float): Standard deviation of gaussian distribution
+
+    Returns:
+        np.ndarray[np.float32]: 1D gaussian distribution kernel
+    """
     r: np.ndarray[np.float32] = np.arange(n, dtype=np.float32) - (n - 1) / 2
     r = np.exp(-(r**2) / (2 * sigma**2))
     return r / r.sum()
@@ -216,23 +235,32 @@ def gauss2d(
     shape: tuple[int, int],
     sigma: float,
 ) -> "np.ndarray[np.float32]":
+    """Gaussian Distribution 2D Kernel
+
+    Args:
+        shape (tuple[int, int]): Shape of kernel
+        sigma (float): Standard deviation of gaussian distribution
+
+    Returns:
+        np.ndarray[np.float32]: 2D gaussian distribution kernel
+    """
     g1: np.ndarray[np.float32] = gauss(shape[0], sigma).reshape(shape[0], 1)
     g2: np.ndarray[np.float32] = gauss(shape[1], sigma).reshape(1, shape[1])
     return np.matmul(g1, g2)
 
 
 def psf2otf(
-    filter: np.ndarray,
+    filter: "np.ndarray[np.float32]",
     shape: tuple[int, int],
-) -> np.ndarray:
+) -> "np.ndarray[np.complex128]":
     """Pad and shift the filter, then return with result of FFT of it
 
     Args:
-        filter (np.ndarray): psf, filter
+        filter (np.ndarray[np.float32]): psf, filter
         shape (tuple[int, int]): desired shape of output
 
     Returns:
-        np.ndarray: 2d numpy array otf
+        np.ndarray[np.complex128]: 2d numpy array otf
     """
 
     top = filter.shape[0] // 2
@@ -258,6 +286,28 @@ def unsharpMasking(
     sigma: float,
     domain: str,
 ) -> "np.ndarray[np.uint8]":
+    """Unsharp Masking with Various?(`spatial`, `frequency`) Domains
+
+    Unsharpening is formulated like below
+
+    I' = I + A * (I - F * I)
+
+    I for input image , I' for result image
+    
+    A for sharpening strength alpha
+    
+    F for low-pass filter, usually it is gaussian filter
+
+    Args:
+        image (np.ndarray[np.uint8]): Image
+        alpha (float): Sharpening strength
+        padding (int): Padding of the image, filter size will be `padding * 2 + 1`
+        sigma (float): Standard deviation of gaussian filter
+        domain (str): Domain to perform the unsharpening, it can be spatial or frequency
+
+    Returns:
+        np.ndarray[np.uint8]: Unsharpened Image
+    """
     assert len(image.shape) == 3  # Colored Image
     assert image.shape[2] == 3  # RGB
     assert domain in ["spatial", "frequency"]
@@ -294,7 +344,7 @@ def unsharpMasking(
             result: np.ndarray[np.float64] = np.real(np.fft.ifft2(result_f))
             result = np.clip(
                 result, 0, 255
-            )  # wtf who ever tried to cast ints over 255 to uint8 << me
+            )
             result: np.ndarray[np.uint8] = result.astype(np.uint8)[
                 padding:-padding, padding:-padding
             ]
