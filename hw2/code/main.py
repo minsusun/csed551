@@ -68,7 +68,7 @@ def problem1():
         # input image visualization in frequency domain
         fig = plt.figure()
         fig.set_figwidth(20)
-        fig.set_figheight(5)
+        fig.set_figheight(6)
         fig.suptitle(f"Original {image_filename} in Frequency Domain", fontsize=25)
 
         for i in range(3):
@@ -115,7 +115,7 @@ def problem1():
                 # filtered image visualization
                 fig = plt.figure()
                 fig.set_figwidth(20)
-                fig.set_figheight(5)
+                fig.set_figheight(6)
                 fig.suptitle(
                     f"Filtered {image_filename} in Frequency Domain", fontsize=25
                 )
@@ -133,7 +133,6 @@ def problem1():
                 filtered_image_fft_file_path = os.path.join(
                     config["supplementary_output_dir"], filtered_image_fft_filename
                 )
-                fig.tight_layout()
                 fig.savefig(filtered_image_fft_file_path, format="png")
 
                 print(
@@ -141,20 +140,19 @@ def problem1():
                 )
                 print()
 
-    for padding in config["padding_list"]:
-        for threshold in config["threshold_list"]:
-            # filter visualization
-            filter = (
-                hw2.idealLowPassFilter(filtered_image.shape[:2], threshold) * 255
-            )  # normalize
-            filter_filename = f"{padding}_{threshold}.png"
-            filter_file_path = os.path.join(
-                config["supplementary_output_dir"], filter_filename
-            )
-            cv2.imwrite(filter_file_path, filter)
-            print(
-                f'[ ! ]Saved visualization of filter in frequency domain at "{filter_file_path}"'
-            )
+    for threshold in config["threshold_list"]:
+        # filter visualization
+        filter = (
+            hw2.idealLowPassFilter((200, 200), threshold) * 255
+        )  # normalize
+        filter_filename = f"{threshold}.png"
+        filter_file_path = os.path.join(
+            config["supplementary_output_dir"], filter_filename
+        )
+        cv2.imwrite(filter_file_path, filter)
+        print(
+            f'[ ! ]Saved visualization of filter in frequency domain at "{filter_file_path}"'
+        )
     print()
 
 
@@ -177,7 +175,7 @@ def problem2():
         # input image visualization in frequency domain
         fig = plt.figure()
         fig.set_figwidth(20)
-        fig.set_figheight(5)
+        fig.set_figheight(6)
         fig.suptitle(f"Original {image_filename} in Frequency Domain", fontsize=25)
 
         for i in range(3):
@@ -191,7 +189,6 @@ def problem2():
         original_image_fft_file_path = os.path.join(
             config["supplementary_output_dir"], original_image_fft_filename
         )
-        fig.tight_layout()
         fig.savefig(original_image_fft_file_path, format="png")
 
         print(
@@ -212,7 +209,7 @@ def problem2():
                 )
                 print(f"[ ! ]Applied Gaussian low pass filter on image!")
 
-                output_filename = f"{''.join(image_filename.split('.')[:-1])}_{padding}_{threshold}.{image_filename.split('.')[-1]}"
+                output_filename = f"{''.join(image_filename.split('.')[:-1])}_{padding}_{threshold}.png"
                 output_file_path = os.path.join(config["output_dir"], output_filename)
 
                 cv2.imwrite(
@@ -224,7 +221,7 @@ def problem2():
                 # filtered image visualization
                 fig = plt.figure()
                 fig.set_figwidth(20)
-                fig.set_figheight(5)
+                fig.set_figheight(6)
                 fig.suptitle(
                     f"Filtered {image_filename} in Frequency Domain", fontsize=25
                 )
@@ -242,7 +239,6 @@ def problem2():
                 filtered_image_fft_file_path = os.path.join(
                     config["supplementary_output_dir"], filtered_image_fft_filename
                 )
-                fig.tight_layout()
                 fig.savefig(filtered_image_fft_file_path, format="png")
 
                 print(
@@ -250,20 +246,19 @@ def problem2():
                 )
                 print()
 
-    for padding in config["padding_list"]:
-        for threshold in config["threshold_list"]:
-            # filter visualization
-            filter = (
-                hw2.idealLowPassFilter(filtered_image.shape[:2], threshold) * 255
-            )  # normalize
-            filter_filename = f"{padding}_{threshold}.png"
-            filter_file_path = os.path.join(
-                config["supplementary_output_dir"], filter_filename
-            )
-            cv2.imwrite(filter_file_path, filter)
-            print(
-                f'[ ! ]Saved visualization of filter in frequency domain at "{filter_file_path}"'
-            )
+    for threshold in config["threshold_list"]:
+        # filter visualization
+        filter = (
+            hw2.gaussianLowPassFilter((200, 200), threshold) * 255
+        )  # normalize
+        filter_filename = f"{threshold}.png"
+        filter_file_path = os.path.join(
+            config["supplementary_output_dir"], filter_filename
+        )
+        cv2.imwrite(filter_file_path, filter)
+        print(
+            f'[ ! ]Saved visualization of filter in frequency domain at "{filter_file_path}"'
+        )
     print()                
 
 
@@ -297,6 +292,7 @@ def problem3():
                     # main process
                     print(f"[***]Target {image_filename}")
                     print(f"[***]    Performing {hw2.unsharpMasking.__name__}")
+                    print(f"[***]    alpha: {alpha}")
                     print(f"[***]    padding size: {padding}")
                     print(f"[***]    sigma: {sigma:.2f}")
                     print(f"[***]    doamin: {domain}")
