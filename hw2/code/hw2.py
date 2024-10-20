@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-DEFAULT_BORDER_TYPE = cv2.BORDER_REFLECT
+DEFAULT_BORDER_TYPE = cv2.BORDER_REPLICATE
 
 
 def squaredDistanceMatrix(shape: tuple[int, int]) -> "np.ndarray[np.float32]":
@@ -344,7 +344,7 @@ def unsharpMasking(
             result: np.ndarray[np.float64] = np.real(np.fft.ifft2(result_f))
             result = np.clip(
                 result, 0, 255
-            )  # wtf who ever tried to cast ints over 255 to uint8 << me
+            )
             result: np.ndarray[np.uint8] = result.astype(np.uint8)[
                 padding:-padding, padding:-padding
             ]
