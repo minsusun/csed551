@@ -53,18 +53,22 @@ def filterGaussian(
     else:
         kernel = build2DGaussianKernel(kernel_size, kernel_sigma)
 
-    for i in range(height):
-        for j in range(width):
-            for k in range(channel):
-                if separable:
-                    # (kernel_size, kernel_size) * (kernel_size, 1) * (1, kernel_size)
+    if separable:
+        aux = np.zeros(height, width + 2 * padding_size, channel)
+        for i in range(height):
+            for j in range(width + 2 * padding_size):
+                for k in range(channel):
+                    aux[i][j][k] = np.sum(image[i : i + kernel_size, j, k] * kernel_col)
+        for i in range(height):
+            for j in range(width):
+                for k in range(channel):
                     result[i][j][k] = np.sum(
-                        image[i : i + kernel_size, j : j + kernel_size, k]
-                        * kernel_col
-                        * kernel_row
+                        aux[i, j : j + kernel_size, k] * kernel_row
                     )
-                else:
-                    # (kernel_size, kernel_size) * (kernel_size, kernel_size)
+    else:
+        for i in range(height):
+            for j in range(width):
+                for k in range(channel):
                     result[i][j][k] = np.sum(
                         image[i : i + kernel_size, j : j + kernel_size, k] * kernel
                     )
