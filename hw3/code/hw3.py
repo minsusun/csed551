@@ -51,7 +51,9 @@ def RANSAC(matches, kp1, kp2, image1, image2) -> None:
 
     inlier_matches = [matches[idx] for idx, _, _ in target_inlier_pair]
     progress = cv2.vconcat(image1, image2)
-    progress = cv2.drawMatchesKnn(image1, kp1, image2, kp2, matches1to2 = inlier_matches, outImg = progress, flags = 2)
+    progress = cv2.drawMatchesKnn(
+        image1, kp1, image2, kp2, matches1to2=inlier_matches, outImg=progress, flags=2
+    )
 
     return hom, progress
 
@@ -133,10 +135,21 @@ def panorama(
         kp_src, des_src = SIFT.detectAndCompute(source_image, None)
 
         if idx == 0:
-            kp_draw = cv2.drawKeypoints(reference_image, kp_ref, cv2.DRAW_MATCHES_FLAGS_DEFAULT + cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS, color = (0, 255, 255))
+            kp_draw = cv2.drawKeypoints(
+                reference_image,
+                kp_ref,
+                cv2.DRAW_MATCHES_FLAGS_DEFAULT
+                + cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS,
+                color=(0, 255, 255),
+            )
             progress[0].append(kp_draw)
 
-        kp_draw = cv2.drawKeypoints(source_image, kp_src, cv2.DRAW_MATCHES_FLAGS_DEFAULT + cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS, color = (0, 255, 255))
+        kp_draw = cv2.drawKeypoints(
+            source_image,
+            kp_src,
+            cv2.DRAW_MATCHES_FLAGS_DEFAULT + cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS,
+            color=(0, 255, 255),
+        )
         progress[0].append(kp_draw)
 
         matches = BF.knnMatch(des_ref, des_src, k=2)
@@ -147,7 +160,9 @@ def panorama(
                 good_matches.append([m])
 
         # 3. Estimate the homographics between images using RANSAC
-        H, inter_image = RANSAC(good_matches, kp_ref, kp_src, reference_image, source_image)
+        H, inter_image = RANSAC(
+            good_matches, kp_ref, kp_src, reference_image, source_image
+        )
 
         # 4. Warp the images to the reference image
         # 5. Compose them

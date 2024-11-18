@@ -43,6 +43,7 @@ def stitch_the_abnormal():
 
     cv2.imwrite(abnormal_result_path, result)
 
+
 if __name__ == "__main__":
     stitch_the_images()
     stitch_the_abnormal()
