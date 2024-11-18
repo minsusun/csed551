@@ -120,15 +120,24 @@ def stitch_images(
 def panorama(
     image_list: list["np.ndarray[np.uint8 | np.float32]"],
 ) -> "np.ndarray[np.uint8 | np.float32]":
-    progress = []
+    # progress[0]: kp draw
+    # progress[1]: kp matching draw
+    progress = [[], []]
 
     # 1. Given N input images, set one image as a reference
     reference_image = image_list[0]
 
-    for source_image in enumerate(image_list[1:]):
+    for idx, source_image in enumerate(image_list[1:]):
         # 2. Detect feature points from images and correspondeces between pairs of images
         kp_ref, des_ref = SIFT.detectAndCompute(reference_image, None)
         kp_src, des_src = SIFT.detectAndCompute(source_image, None)
+
+        if idx == 0:
+            kp_draw = cv2.drawKeypoints(reference_image, kp_ref, cv2.DRAW_MATCHES_FLAGS_DEFAULT + cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS, color = (0, 255, 255))
+            progress[0].append(kp_draw)
+
+        kp_draw = cv2.drawKeypoints(source_image, kp_src, cv2.DRAW_MATCHES_FLAGS_DEFAULT + cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS, color = (0, 255, 255))
+        progress[0].append(kp_draw)
 
         matches = BF.knnMatch(des_ref, des_src, k=2)
 
@@ -145,6 +154,6 @@ def panorama(
         reference_image = stitch_images(reference_image, source_image, H)
 
         # append kp matching image
-        progress.append(inter_image)
+        progress[1].append(inter_image)
 
     return reference_image, progress
