@@ -15,8 +15,8 @@ def match_distance(match, H):
 
 def find_inlier(H, matches, threshold):
     inlier = [
-        [match[0].pt, match[1].pt]
-        for match in matches
+        [idx, match[0].pt, match[1].pt]
+        for idx, match in enumerate(matches)
         if match_distance(match, H) < threshold
     ]
     return inlier

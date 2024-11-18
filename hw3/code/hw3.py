@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import random
-import matplotlib.pyplot as plt
 
 import config
 import util
@@ -41,8 +40,8 @@ def RANSAC(matches, kp1, kp2, image1, image2) -> None:
             target_inlier_count = inlier_count
             target_inlier_pair = inlier
 
-    src = np.asarray([[*p, 1] for p, _ in target_inlier_pair])
-    dst = np.asarray([[*p, 1] for _, p in target_inlier_pair])
+    src = np.asarray([[*p, 1] for _, p, _ in target_inlier_pair])
+    dst = np.asarray([[*p, 1] for _, _, p in target_inlier_pair])
 
     # find homography
     # use least square method by specifing method = 0
@@ -50,7 +49,11 @@ def RANSAC(matches, kp1, kp2, image1, image2) -> None:
     # they use LMSolver to find solution for least square problem
     hom, _ = cv2.findHomography(src, dst, 0)
 
-    return hom
+    inlier_matches = [matches[idx] for idx, _, _ in target_inlier_pair]
+    progress = cv2.vconcat(image1, image2)
+    progress = cv2.drawMatchesKnn(image1, kp1, image2, kp2, matches1to2 = inlier_matches, outImg = progress, flags = 2)
+
+    return hom, progress
 
 
 def stitch_images(
@@ -117,10 +120,12 @@ def stitch_images(
 def panorama(
     image_list: list["np.ndarray[np.uint8 | np.float32]"],
 ) -> "np.ndarray[np.uint8 | np.float32]":
+    progress = []
+
     # 1. Given N input images, set one image as a reference
     reference_image = image_list[0]
 
-    for source_image in image_list[1:]:
+    for source_image in enumerate(image_list[1:]):
         # 2. Detect feature points from images and correspondeces between pairs of images
         kp_ref, des_ref = SIFT.detectAndCompute(reference_image, None)
         kp_src, des_src = SIFT.detectAndCompute(source_image, None)
@@ -133,10 +138,13 @@ def panorama(
                 good_matches.append([m])
 
         # 3. Estimate the homographics between images using RANSAC
-        H = RANSAC(good_matches, kp_ref, kp_src, reference_image, source_image)
+        H, inter_image = RANSAC(good_matches, kp_ref, kp_src, reference_image, source_image)
 
         # 4. Warp the images to the reference image
         # 5. Compose them
         reference_image = stitch_images(reference_image, source_image, H)
 
-    return reference_image
+        # append kp matching image
+        progress.append(inter_image)
+
+    return reference_image, progress
