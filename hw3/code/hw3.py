@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import random
-import matplotlib.pyplot as plt
 
 import config
 import util
@@ -13,7 +12,25 @@ SIFT = cv2.SIFT_create()
 BF = cv2.BFMatcher()
 
 
-def RANSAC(matches, kp1, kp2, image1, image2) -> None:
+def RANSAC(
+    matches: "np.ndarray[list[cv2.DMatch]]",
+    kp1: tuple["cv2.KeyPoint"],
+    kp2: tuple["cv2.KeyPoint"],
+    image1: "np.ndarray[np.uint8 | np.float32]",
+    image2: "np.ndarray[np.uint8 | np.float32]",
+) -> tuple["np.ndarray[np.uint8]", "np.ndarray[np.uint8 | np.float32]"]:
+    """Estimate the homography between two key points using RANSAC algorithm
+
+    Args:
+        matches (np.ndarray[np.float32]): matching information between image1 and image2
+        kp1 (tuple[cv2.KeyPoint]): key point information of image1
+        kp2 (tuple[cv2.KeyPoint]): key point information of image2
+        image1 (np.ndarray[np.uint8 | np.float32]): image1
+        image1 (np.ndarray[np.uint8 | np.float32]): image2
+    Returns:
+        tuple[np.ndarray[np.uint8]", "np.ndarray[np.uint8 | np.float32]]:
+            (estimated homography, image of matching key points between two images)
+    """
     RANSAC_CONFIG = config._RANSAC_CONFIG()
 
     # Convert matches to kp pair
@@ -41,8 +58,8 @@ def RANSAC(matches, kp1, kp2, image1, image2) -> None:
             target_inlier_count = inlier_count
             target_inlier_pair = inlier
 
-    src = np.asarray([[*p, 1] for p, _ in target_inlier_pair])
-    dst = np.asarray([[*p, 1] for _, p in target_inlier_pair])
+    src = np.asarray([[*p, 1] for _, p, _ in target_inlier_pair])
+    dst = np.asarray([[*p, 1] for _, _, p in target_inlier_pair])
 
     # find homography
     # use least square method by specifing method = 0
@@ -50,14 +67,30 @@ def RANSAC(matches, kp1, kp2, image1, image2) -> None:
     # they use LMSolver to find solution for least square problem
     hom, _ = cv2.findHomography(src, dst, 0)
 
-    return hom
+    inlier_matches = [matches[idx] for idx, _, _ in target_inlier_pair]
+    progress = cv2.vconcat(image1, image2)
+    progress = cv2.drawMatchesKnn(
+        image1, kp1, image2, kp2, matches1to2=inlier_matches, outImg=progress, flags=2
+    )
+
+    return hom, progress
 
 
 def stitch_images(
     ref: "np.array[np.uint8 | np.float32]",
     src: "np.array[np.uint8 | np.float32]",
     H: "np.array[np.uint8]",
-) -> "np.array[np.float32]":
+) -> "np.array[np.uint8]":
+    """Stitch the images(ref, src) using given homography
+
+    Args:
+        ref (np.array[np.uint8 | np.float32]): the reference image, stays tight
+        src (np.array[np.uint8 | np.float32]): the source image, transformed with H
+        H (np.array[np.uint8]): homography to use when stitch the images
+
+    Returns:
+        np.array[np.uint8]: result of stitched image
+    """
     ref_height, ref_width, _ = ref.shape
     src_height, src_width, _ = src.shape
 
@@ -116,14 +149,49 @@ def stitch_images(
 
 def panorama(
     image_list: list["np.ndarray[np.uint8 | np.float32]"],
-) -> "np.ndarray[np.uint8 | np.float32]":
+) -> tuple[
+    "np.ndarray[np.uint8]",
+    list[list["np.ndarray[np.uint8]"], list["np.ndarray[np.uint8]"]],
+]:
+    """Stitch the given images with RANSAC algorithm
+
+    Args:
+        image_list (list[np.ndarray[np.uint8 | np.float32]]): list of images to stitch
+
+    Returns:
+        tuple[np.ndarray[np.uint8], list[]]: (stitched image, intermediate images)
+            intermediate images -> [list[np.ndarray[np.uint8]], list[np.ndarray[np.uint8]]]
+                                -> image dumps of key points illustration and key points matching
+    """
+    # progress[0]: kp draw
+    # progress[1]: kp matching draw
+    progress = [[], []]
+
     # 1. Given N input images, set one image as a reference
     reference_image = image_list[0]
 
-    for source_image in image_list[1:]:
+    for idx, source_image in enumerate(image_list[1:]):
         # 2. Detect feature points from images and correspondeces between pairs of images
         kp_ref, des_ref = SIFT.detectAndCompute(reference_image, None)
         kp_src, des_src = SIFT.detectAndCompute(source_image, None)
+
+        if idx == 0:
+            kp_draw = cv2.drawKeypoints(
+                reference_image,
+                kp_ref,
+                cv2.DRAW_MATCHES_FLAGS_DEFAULT
+                + cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS,
+                color=(0, 255, 255),
+            )
+            progress[0].append(kp_draw)
+
+        kp_draw = cv2.drawKeypoints(
+            source_image,
+            kp_src,
+            cv2.DRAW_MATCHES_FLAGS_DEFAULT + cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS,
+            color=(0, 255, 255),
+        )
+        progress[0].append(kp_draw)
 
         matches = BF.knnMatch(des_ref, des_src, k=2)
 
@@ -133,10 +201,15 @@ def panorama(
                 good_matches.append([m])
 
         # 3. Estimate the homographics between images using RANSAC
-        H = RANSAC(good_matches, kp_ref, kp_src, reference_image, source_image)
+        H, inter_image = RANSAC(
+            good_matches, kp_ref, kp_src, reference_image, source_image
+        )
 
         # 4. Warp the images to the reference image
         # 5. Compose them
         reference_image = stitch_images(reference_image, source_image, H)
 
-    return reference_image
+        # append kp matching image
+        progress[1].append(inter_image)
+
+    return reference_image, progress
