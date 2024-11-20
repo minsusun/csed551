@@ -12,7 +12,25 @@ SIFT = cv2.SIFT_create()
 BF = cv2.BFMatcher()
 
 
-def RANSAC(matches, kp1, kp2, image1, image2) -> None:
+def RANSAC(
+    matches: "np.ndarray[list[cv2.DMatch]]",
+    kp1: tuple["cv2.KeyPoint"],
+    kp2: tuple["cv2.KeyPoint"],
+    image1: "np.ndarray[np.uint8 | np.float32]",
+    image2: "np.ndarray[np.uint8 | np.float32]",
+) -> tuple["np.ndarray[np.uint8]", "np.ndarray[np.uint8 | np.float32]"]:
+    """Estimate the homography between two key points using RANSAC algorithm
+
+    Args:
+        matches (np.ndarray[np.float32]): matching information between image1 and image2
+        kp1 (tuple[cv2.KeyPoint]): key point information of image1
+        kp2 (tuple[cv2.KeyPoint]): key point information of image2
+        image1 (np.ndarray[np.uint8 | np.float32]): image1
+        image1 (np.ndarray[np.uint8 | np.float32]): image2
+    Returns:
+        tuple[np.ndarray[np.uint8]", "np.ndarray[np.uint8 | np.float32]]:
+            (estimated homography, image of matching key points between two images)
+    """
     RANSAC_CONFIG = config._RANSAC_CONFIG()
 
     # Convert matches to kp pair
@@ -62,7 +80,17 @@ def stitch_images(
     ref: "np.array[np.uint8 | np.float32]",
     src: "np.array[np.uint8 | np.float32]",
     H: "np.array[np.uint8]",
-) -> "np.array[np.float32]":
+) -> "np.array[np.uint8]":
+    """Stitch the images(ref, src) using given homography
+
+    Args:
+        ref (np.array[np.uint8 | np.float32]): the reference image, stays tight
+        src (np.array[np.uint8 | np.float32]): the source image, transformed with H
+        H (np.array[np.uint8]): homography to use when stitch the images
+
+    Returns:
+        np.array[np.uint8]: result of stitched image
+    """
     ref_height, ref_width, _ = ref.shape
     src_height, src_width, _ = src.shape
 
@@ -121,7 +149,20 @@ def stitch_images(
 
 def panorama(
     image_list: list["np.ndarray[np.uint8 | np.float32]"],
-) -> "np.ndarray[np.uint8 | np.float32]":
+) -> tuple[
+    "np.ndarray[np.uint8]",
+    list[list["np.ndarray[np.uint8]"], list["np.ndarray[np.uint8]"]],
+]:
+    """Stitch the given images with RANSAC algorithm
+
+    Args:
+        image_list (list[np.ndarray[np.uint8 | np.float32]]): list of images to stitch
+
+    Returns:
+        tuple[np.ndarray[np.uint8], list[]]: (stitched image, intermediate images)
+            intermediate images -> [list[np.ndarray[np.uint8]], list[np.ndarray[np.uint8]]]
+                                -> image dumps of key points illustration and key points matching
+    """
     # progress[0]: kp draw
     # progress[1]: kp matching draw
     progress = [[], []]
